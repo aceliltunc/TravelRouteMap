@@ -1,0 +1,74 @@
+.active{
+    background-color: wheat;
+    color: black;
+}
+
+body{
+    background-color: wheat;
+    max-width: 100%;
+}
+
+.search{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+button{
+    width: 50px;
+    height: 30px;
+    float: right;
+}
+
+
+form{
+  float: right;
+}
+
+.ul_class {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blueviolet;
+
+  }
+  
+  .li_class {
+    float: left;
+  }
+  
+.li_class a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+h1,h2,h3,h4,h5,h6{
+    font-size: medium;
+    color: #111;
+  }
+
+.kullanici_Girisi{
+  position: absolute;
+  left: 100px;
+  top: 200px;
+}
+
+.kullanici_Kayıt{
+ position: absolute;
+ left: 100px;
+ top: 100px; 
+}
+
+h1,h2,h3,h4,h5,h6{
+  text-align: center;
+  left: 35px;
+  right: 100px;
+}
