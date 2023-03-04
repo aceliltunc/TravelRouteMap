@@ -1,2 +1,2 @@
 # TravelRouteMap
-link = https://aceliltunc.github.io/TravelRouteMap/
+link = http://aceliltunc.github.io/TravelRouteMap/
