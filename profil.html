@@ -8,23 +8,55 @@
         <link href="./css/style.css" rel="stylesheet">
         <link rel="icon" href="./resim/route-icon-logo-illustration-tracking-symbol-template-for-graphic-and-web-design-collection-free-vector.jpg">
     </head>
+    <script>
+        function menu_animation(x){
+            x.classList.toggle("change");
+        }
 
+        function acordion_menu(){
+            var x = document.getElementById("mobile_links");
+            if(x.style.display ==="block"){
+                x.style.display="none";
+            }else{
+                x.style.display="block";
+            }
+        }
+    </script>
     <body>
-        <ul class="ul_class">
-            <li class="li_class"><a href="./index.html">Ana Sayfa</a></li>
-            <li class="li_class"><a href="./harita.html">Harita</a></li>
-            <li class="li_class"><a class="active" href="./profil.html">Profil</a></li>
-            <li class="li_class"><a href="./hakkimizda.html">Hakkımızda</a></li>
-            <li class="li_class"><a href="./iletisim.html">İletişim</a></li>
-            <li class="li_class">
-                <form class="search" name="arama" method="post">
-                    <input type="text" name="arama" placeholder="Arama">
-                    <input type="submit" name="ara" value="ara">
-                </form>
-            </li>
-        </ul>
+        <nav>
+            <div class="ul_class">
+                <li class="li_class"><a href="./index.html">Ana Sayfa</a></li>
+                <li class="li_class"><a href="./harita.html">Harita</a></li>
+                <li class="li_class"><a class="active" href="./profil.html">Profil</a></li>
+                <li class="li_class"><a href="./hakkimizda.html">Hakkımızda</a></li>
+                <li class="li_class"><a href="./iletisim.html">İletişim</a></li>
+                <li class="li_class">
+                    <form class="search" name="arama" method="post">
+                        <input type="text" name="arama" placeholder="Arama">
+                        <input type="submit" name="ara" value="ara">
+                    </form>
+                    
+                </li>
+                    <div class="container" onclick="menu_animation(this), acordion_menu()">         
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div>
+                        <div id="mobile_links" class="topnav">
+                            <a href="./index.html">Ana Sayfa</a>
+                            <a href="./harita.html">Harita</a>
+                            <a href="./profil.html">Profil</a>
+                            <a href="./hakkimizda.html">Hakkımızda</a>
+                            <a href="./iletisim.html">İletişim</a>
+                        </div>
+                        
+                    </div>
+                    
+            </div>
+        </nav>
 
-        <section>
+        <div>
             <form class="kullanici_Girisi" name="Kullanıcı Girişi" method="get" >
                 <label for="Kullanıcı Adı">Kullanıcı Adı :</label><br>
                 <input type="text" name="Kullanı Adı" placeholder="Kullanıcı Adı"><br><br><br>
@@ -34,6 +66,6 @@
                 
                 <p style="font-size: small;">Daha önce kayıt olmadıysanız <a href="./index.html" style="color: rgb(1, 148, 148)">Kayıt olmak</a> için.</p>
             </form>
-        </section>
+        </div>
     </body>
 </html>

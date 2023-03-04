@@ -9,8 +9,23 @@
         <link rel="icon" href="./resim/route-icon-logo-illustration-tracking-symbol-template-for-graphic-and-web-design-collection-free-vector.jpg">
     </head>
 
-    <body>
-        <ul class="ul_class">
+    <script>
+        function menu_animation(x){
+            x.classList.toggle("change");
+        }
+
+        function acordion_menu(){
+            var x = document.getElementById("mobile_links");
+            if(x.style.display ==="block"){
+                x.style.display="none";
+            }else{
+                x.style.display="block";
+            }
+        }
+    </script>
+<body>
+      <nav>
+        <div class="ul_class">
             <li class="li_class"><a href="./index.html">Ana Sayfa</a></li>
             <li class="li_class"><a class="active" href="./harita.html">Harita</a></li>
             <li class="li_class"><a href="./profil.html">Profil</a></li>
@@ -21,8 +36,26 @@
                     <input type="text" name="arama" placeholder="Arama">
                     <input type="submit" name="ara" value="ara">
                 </form>
+                
             </li>
-        </ul>
+                <div class="container" onclick="menu_animation(this), acordion_menu()">         
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="">
+                    <div id="mobile_links" class="topnav">
+                        <a href="./index.html">Ana Sayfa</a>
+                        <a href="./harita.html">Harita</a>
+                        <a href="./profil.html">Profil</a>
+                        <a href="./hakkimizda.html">Hakkımızda</a>
+                        <a href="./iletisim.html">İletişim</a>
+                    </div>
+                    
+                </div>
+                
+        </div>
+       </nav>
 
         <p style="background-color: brown; text-align: center;"><img src="./resim/samsun.jfif" style="height: 250px;"></p>
         <h2>Samsun</h2>
